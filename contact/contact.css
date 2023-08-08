@@ -1,0 +1,119 @@
+/*all the doc*/
+*{
+    margin:0;
+}
+/*body*/
+body{
+    background-color:#F6F4F3;
+}
+
+/*flex container*/
+.flex-container{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+/*menu*/
+.menu{
+    display:flex;
+    flex-flow: row wrap;
+    border-bottom:solid 5px;
+    padding-bottom:5px;
+}
+.title{
+    flex-grow: 2;
+    font-weight: bolder;
+    padding:15px;
+}
+.options{
+    display:flex;
+    flex-flow: row wrap;
+}
+.options .actual{
+    color:rgb(194, 166, 13);
+}
+.options a{
+    display:block;
+    padding:5px;
+    text-decoration: none;
+    color:darkcyan;
+}
+.options a:hover{
+    background-color:burlywood;
+}
+
+/*form*/
+form{
+    margin:10px;
+}
+fieldset{
+    display:flex;
+    flex-flow: column wrap;
+}
+fieldset > div{
+    display:flex;
+    flex-flow: row nowrap;
+}
+label{
+    margin:5px;
+    display:block;
+}
+input[type = text], input[type = email]{
+    transition:width, 2s, linear, 1s;
+    width:45px;
+}
+.email{
+    white-space: nowrap;
+}
+
+input[type = text] ,input[type = email] , textarea{
+    padding:5px;
+    margin:5px;
+}
+input[type = text]:focus, input[type = email]:focus{
+    width:100%;
+}
+input[type = submit]{
+    margin:5px;
+}
+input:focus, textarea:focus{
+    background-color:rgb(229, 255, 255);
+}
+input[type = submit]{
+    padding:10px;
+    background-color:black;
+    color:white;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+/*media*/
+@media screen and (max-width:450px) {
+    form > div{
+        flex-flow: column wrap;
+    }
+    .menu, .options{
+        flex-flow: column wrap;
+    }
+    input[type = text], input[type = email]{
+        transition:none;
+        width:150px;
+    }
+    .options{
+        border-top:dashed 3px gold;
+    }
+
+    input[type = text]:focus, input[type = email]:focus{
+        width:150px;
+    }    
+}
+@media screen and (max-width:310px) {
+    label, input, textarea{
+        width:150px;
+    }
+}
+@media screen and (max-width:220px) {
+    label, input, textarea{
+        width:80px;
+    }
+}

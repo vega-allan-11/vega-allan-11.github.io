@@ -1,0 +1,109 @@
+/*all the page*/
+*{
+    margin:0;
+    box-sizing: border-box;
+
+}
+a{
+    display:block;
+    text-decoration: none;
+    color:rgb(180, 168, 168);
+}
+body{
+    background-color:rgba(82, 43, 48, 0.874);
+    font-family: "Edu SA Beginner";
+}
+
+/*main flexbox*/
+.flexbox{
+    display:flex;
+    flex-flow: column wrap;
+}
+
+
+/*menu*/
+.menu{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-bottom:5px dashed aqua;
+}
+
+/*inside menu*/
+.title{
+    flex-grow: 2;
+    padding:5px;
+    color:rgb(180, 168, 168);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quotes{
+    color:gold;
+}
+
+.options{
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*inside options*/
+.options a{
+    padding:5px;
+}
+.options a:hover{
+    background-color: rgb(2, 123, 174);
+}
+
+/*box quotes*/
+.box-quotes{
+    margin:10px;
+    flex-flow: row wrap;
+    display:flex;
+}
+
+/*inside box quotes*/
+.box-quotes div{
+    flex-basis: 20%;
+    padding:5px;
+    margin:5px;
+    justify-content: flex-start;
+    color:rgb(1, 246, 107);
+}
+.box-quotes div:hover, .box-quotes div:hover .author{
+    background-color:rgb(45, 204, 53);
+    color:aqua;
+}
+.quote1{
+    border:5px ridge rgb(177, 177, 218);
+}
+.quote2{
+    border:5px ridge rgb(161, 161, 213);
+}
+.quote3{
+    border:5px ridge rgb(132, 132, 170);
+}
+.quote4{
+    border:5px ridge rgb(170, 170, 196);
+}
+.quote5{
+    border:5px ridge rgb(151, 151, 157);
+}
+.quote6{
+    border:5px ridge rgb(130, 130, 130);
+}
+.quote7{
+    border:5px ridge rgb(230, 214, 214);
+}
+.quote8{
+    border:5px ridge rgb(143, 143, 143);
+}
+.quote9{
+    border:5px ridge rgb(198, 103, 103);
+}
+.quote10{
+    border:5px ridge rgb(121, 121, 135);
+}
+.author{
+    font-style: italic;
+}

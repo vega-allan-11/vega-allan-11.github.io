@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/Projects/Allan Vega/contact/contact.css">
+    <link rel="shortcut icon" href="/Projects/Allan Vega/images/fotoPerfilAllan.jpg" type="image/x-icon">
+    <base href="/Projects/Allan Vega/index.html">
+    <meta name="keywords" content="Youtube, Facebook, GitHub, w3Schools, Instagram, Ifarhu">
+    <meta name="author" content="Allan Vega">
+</head>
+
+<body>
+    <main class="flex-container">
+
+        <!--Menu bar-->
+        <nav class="menu">
+            <div class="title">
+                Contact
+            </div>
+            <div class="options">
+                <a href="/Projects/Allan Vega/index.html" class="home">HOME</a>
+                <a href="/Projects/Allan Vega/Sites/Sites.html" class="websites">SITES</a>
+                <a href="/Projects/Allan Vega/quotes/quotes.html" class="quotes">QUOTES</a>
+                <a href="/Projects/Allan Vega/contact/contact.html" class="contact"><span class="actual">CONTACT</span></a>
+            </div>
+        </nav>
+
+        <!--Form-->
+        <form action="php/action-page" class="form">
+            <fieldset>
+                <legend>Tell us!</legend>
+                <!--Name-->
+                <div class="name">
+                    <label for="name">NAME:</label>
+                    <input type="text" name="name" id="name" required placeholder="Name">
+                </div>
+
+                <!--Email-->
+                <div class="email">
+                    <label for="email" class="email">E-MAIL:</label>
+                    <input type="email" name="email" id="email" required placeholder="E-mail">
+                </div>
+
+                <!--Subject-->
+                <div class="subject">
+                    <label for="subject" class="subject">SUBJECT:</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                </div>
+
+                <!--Message-->
+                <div class="message">
+                    <label for="message">MESSAGE:</label> <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+
+                <!--submit-->
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

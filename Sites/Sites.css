@@ -1,0 +1,99 @@
+/*all the doc*/
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+
+/*body*/
+body{
+  background-color: #FFFFFF;
+  font-family: "Audiowide", sans-serif;
+}
+
+
+/*content of the page is flex*/
+.flexbox{
+  display:flex;
+  flex-flow: column wrap;
+}
+
+
+/* nav is refer to menu, links (home, sites) and the title of the website */
+.menu{
+  background-color: #9B9B9B;
+  display:flex;
+  flex-flow: row wrap;
+  border:2px ridge #5F5E5F;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.title{
+  flex-grow: 2;
+  padding:5px;
+  color: #FFFFFF;
+}
+.options{
+  display:flex;
+  flex-flow: row wrap;
+}
+
+
+/*sites*/
+.sites{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:flex-start;
+  margin:5px;
+}
+.description{
+  text-align: center;
+  background-color:red;
+  text-transform: capitalize;
+  background-color:#CACACA;
+  color:black;
+}
+.actual{
+  color:gold;
+}
+
+
+/* <a> that is block*/
+a{
+  display:block;
+  text-decoration:none;
+}
+.menu a{
+  color: #FFFFFF;
+  text-decoration:none;
+  padding:5px;
+}
+.menu a:hover{
+  background-color:black;
+}
+
+.sites a{
+  margin:5px;
+  border:ridge 4px #595056;
+  flex-basis:20%;
+}
+.sites a:hover{
+  opacity: 0.8;
+}
+
+
+
+/* img that is block */
+img{
+  display:block;
+  width:100%;
+  height:105px;
+  margin:auto;
+  object-fit: contain;
+}
+
+
+
+
+
+

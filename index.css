@@ -1,0 +1,122 @@
+/* all the doc */
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(red, yellow);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+
+/*flexbox that contain all the content page*/
+.flexbox{
+  display:flex;
+  flex-flow: column wrap;
+}
+
+
+/*menu*/
+.menu{
+  display:flex;
+  flex-flow: row wrap;
+  border-bottom:dotted 5px aliceblue;
+  margin-bottom: 15px;
+}
+.title{
+  flex-grow: 2;
+  padding:5px;
+}
+.options{
+  display: flex;
+  flex-direction: row wrap;
+}
+
+.menu a:hover{
+  background-color:rgb(243, 147, 84);
+}
+.home{
+  color:gold;
+}
+.menu a{
+  text-decoration: none;
+  display:block;
+  padding:5px;
+}
+.websites, .quotes, .contact, .title{
+  color:aliceblue
+}
+
+
+
+/*message that has movement*/
+@keyframes message {
+  from{
+    background-color:yellow;
+    left:0;
+    top:0;
+  }
+  to{
+    background-color:red;
+    left:100px;
+    top:0;
+  }
+
+}
+.movement-message{
+  animation:message 3s linear 2s infinite alternate;
+  position:relative;
+  border-radius: 20%;
+  padding:5px;
+}
+
+
+/*content*/
+.content{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content:space-around;
+  margin:10px;
+}
+.about{
+  flex-grow:2;
+  text-align:justify;
+  word-wrap: break-word;
+  padding:10px;
+}
+
+
+/*image*/
+.picture{
+  display:block;
+  width:30px;
+  width:20%;
+  object-fit:cover;
+  flex-grow: 1;
+  border: ridge 10px gold;
+}
+
+
+/*Media*/
+@media screen and (max-width:300px) {
+  .content{
+    flex-direction: column;
+  }
+  .picture{
+    margin:auto;
+  }
+}
+@media screen and (max-width:110px) {
+  .movement-message{
+    display:none;
+  }
+}
+@media screen and (max-width:220px){
+  body{
+    background-color:rgb(231, 75, 75);
+    background-image: none;
+  }
+}
