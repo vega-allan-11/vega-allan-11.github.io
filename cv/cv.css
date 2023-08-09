@@ -1,0 +1,140 @@
+/*All document*/
+*{
+    margin:0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+    list-style-type:circle;
+}
+a{
+    text-decoration: none;
+    padding:5px;
+    display:block;
+}
+/*menu*/
+.menu{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    padding:5px;
+}
+.title{
+    grid-column: 1/5;
+    font-size: x-large;
+}
+.options{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+.options a{
+    color:black;
+}
+.options a:hover{
+    background-color: cadetblue;
+}
+.actual{
+    color:gold;
+}
+/*container*/
+.container{
+    display:grid;
+    grid-template-columns: auto auto;
+    height: 100vh;
+}
+.left{
+    display:grid;
+    grid-template-rows:auto auto auto auto;
+    border-right: ridge 5px blue;
+    background-color: rgb(23, 23, 99);
+    color:white;
+}
+.right{
+    display:grid;
+    grid-template-rows:auto auto auto auto ;
+    background-color: rgb(255, 246, 210);
+}
+.container h2{
+    text-align: center;
+}
+
+/*picture*/
+.picture{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.picture img{
+    display:block;
+    width:130px;
+    border-radius: 50%;
+}
+
+/*name*/
+.picture-name{
+    display: grid;
+    grid-template-rows:auto auto;
+    justify-content:center;
+    align-content: center;
+    padding:5px;
+}
+.picture-name p{
+    color:aqua;
+}
+
+/*Social media*/
+.social-media{
+    padding:5px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+ .social-media div{
+    padding:5px;
+}
+.social-media a{
+    color:aqua;
+    text-align: justify;
+}
+.social-media a:hover{
+    background-color:rgb(166, 129, 129);
+}
+
+/*Skills*/
+.skills{
+    padding:5px;
+    text-align: justify;
+}
+.skills ul li{
+    padding:5px;
+    color:aqua;
+}
+
+/*education history*/
+.education-history{
+    padding:5px;
+}
+.education-history h2{
+    border-radius: 10%;
+    background-color:rgb(229, 229, 229)
+}
+.education-history li{
+    padding:5px;
+}
+
+
+/*technologies handled*/
+.technologies-handled{
+    padding:5px;
+    grid-row: 2/4;
+}
+.technologies-handled h2{
+    border-radius: 10%;
+    background-color:aquamarine;
+}
+.technologies-handled li{
+    padding:5px;
+}
+
+
